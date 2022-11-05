@@ -6,13 +6,14 @@ $email = isset($_POST['email']) ? $_POST['email'] :null;
 
 function gravar($texto){
     $arquivo = "texto.txt";
-    $fp = fopen($arquivo, "w");
+    $fp = fopen($arquivo, "a");
     fwrite($fp, $texto);
     fclose($fp);
 }
 
 if ($nome != null && $email != null ){
-    $texto = "Nome: ". $nome .". Email: ".$email;
+    setcookie("email", $email);
+    $texto = "Nome: ". $nome .". Email: ".$email ."\n";
     gravar($texto);
     header('Location: /teste-pratico/index.html');
 }else{
