@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- api -->
+        <script src="assets/js/service.js" defer></script>
+        <!--meta-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--bootstrap-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <!--css-->
+        <link rel="stylesheet" href="assets/css/style.css">
+        <!--title-->
+        <title>Teste Prático</title>
+    </head>
+    <body>
+
+        <form action="assets/php/script.php" method="post" class="container">
+            <h1 class="title">Inscrição</h1>
+
+            <div class="row">
+                <div class="inputbox">
+                    <input type="text" id="nome" name="nome" required>
+                    <label for="nome">Nome: </label>
+                </div>
+                <div class="inputbox">
+                    <input type="email" id="email" name="email" required>
+                    <label for="email">E-mail: </label>
+                </div>
+                <div class="inputbox">
+                    <input type="tel" id="telefone" required>
+                    <label for="telefone">Telefone: </label>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="inputbox">
+                    <input type="text" id="cep" required>
+                    <label for="cep">CEP: </label>
+                </div>
+                <div class="inputbox">
+                    <input type="text" id="rua" required>
+                    <label for="rua">Rua: </label>
+                </div>
+                <div class="inputbox">
+                    <input type="text" id="bairro" required>
+                    <label for="bairro">Bairro: </label>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="inputbox">
+                    <input type="number" id="numero" required>
+                    <label for="numero">Número: </label>
+                </div>
+                <div class="inputbox">
+                    <input type="text" id="cidade" required>
+                    <label for="cidade">Cidade: </label>
+                </div>
+                <div class="inputbox">
+                    <input type="text" id="uf" required>
+                    <label for="uf">UF: </label>
+                </div>
+            </div>
+
+            <div class="row">
+                <button id="btn">Inscrever</button>
+                
+            </div>
+        </form>
+
+        <!-- cookies -->
+        <script src="assets/js/cookie.js" defer></script>
+        <!-- cdn bootstrap -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </body>
+</html>
